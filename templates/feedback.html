@@ -1,0 +1,26 @@
+<div class="container">
+  <h2>Submit Feedback</h2>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <form method="POST">
+    <label>Category</label>
+    <select name="category" required>
+      <option>Academics</option>
+      <option>Hostel</option>
+      <option>Food</option>
+      <option>Facilities</option>
+    </select>
+
+    <label>Your Feedback</label>
+    <textarea name="message" required></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
+  
+</div>
+<img src="{{ url_for('static', filename='feedback.jpeg') }}"
+     alt="Feedback Image"
+     class="feedback-img">
+     <p class="profile-text">
+    <strong>Balaji M</strong><br>
+    Cyber Security Student
+</p>

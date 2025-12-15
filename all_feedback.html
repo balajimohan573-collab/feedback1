@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>All Student Feedback</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<header>
+  <h2>All Student Feedback</h2>
+</header>
+
+<div class="container">
+
+  {% for row in data %}
+    <div style="border-bottom:1px solid #ddd; padding:15px 0;">
+      <p><strong>Category:</strong> {{ row[0] }}</p>
+      <p>{{ row[1] }}</p>
+      <small>Posted on: {{ row[2] }}</small>
+    </div>
+  {% endfor %}
+
+</div>
+<img src="{{ url_for('static', filename='feedback.jpeg') }}"
+     alt="Feedback Image"
+     class="feedback-img">
+<p class="profile-text">
+    <strong>Balaji M</strong><br>
+    Cyber Security Student
+</p>
+
+<footer>
+  Anonymous • For student improvement By Balaji.M
+</footer>
+
+</body>
+</html>

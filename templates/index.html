@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Feedback Portal</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<header>
+  <h2>Student Feedback & Suggestion Portal</h2>
+</header>
+
+<div class="container">
+    <br><br>
+<a href="/all-feedback">View All Student Feedback</a>
+
+  <p>Welcome! Your feedback helps improve our university.</p>
+  <a href="/feedback">Submit Feedback</a> |
+  <a href="/admin">Admin Panel</a>
+</div>
+<img src="{{ url_for('static', filename='feedback.jpeg') }}"
+     alt="Feedback Image"
+     class="feedback-img">
+<p class="profile-text">
+    <strong>Balaji M</strong><br>
+    Cyber Security Student
+</p>
+
+<footer>
+  © Developed by Balaji M
+</footer>
+
+</body>
+</html>
